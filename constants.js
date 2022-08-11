@@ -1,4 +1,14 @@
+// in this file we will add the addresses and ABIs of the contracts we want to interact with
+
+// when we are developing in full stack, back-end and front-end need to be able to communicate
+// this is why it is useful to have two vscode windows open, one with each
+
+// to get our contract address locally we can open a new terminal, cd into the backend and run "yarn hardhat node" and then copy the address from there
+
 export const contractAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+
+// we can access our contract ABI through our backend vscode window, going to ./artifacts/contracts/FundeMe.json
+
 export const abi = [
   {
     inputs: [

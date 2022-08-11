@@ -1,3 +1,7 @@
+<!--    This is going to be the temporary platform we will use for our front end
+        In html, when we open a blank document, we can type "!" and press enter to get a basic template
+        Anything we write in between <script> tags is going to be compiled as javascript
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,15 +9,23 @@
   </head>
 
   <body>
+    <script src="./index.js" type="module"></script>
+    <!-- this is how we separate our js from our html and access it
+
+        <button id="connectButton" onclick="connect()">Connect</button>
+        <button id="fund"  onclick="fund()">Fund</button>
+
+        We are gonna change these onclick buttons and add them into our js file
+        We apply this change because we changed script type from "text" to "module"
+        And when we did this change the onlclick function stopped working from the .html file
+        -->
     <button id="connectButton">Connect</button>
     <button id="balanceButton">getBalance</button>
     <button id="withdrawButton">Withdraw</button>
     <!-- <form> -->
     <label for="ethAmount">ETH Amount</label>
     <input id="ethAmount" placeholder="0.1" />
-    <button type="button" id="fundButton" > Fund </button>
+    <button type="button" id="fundButton">Fund</button>
     <!-- </form> -->
   </body>
-
-  <script src="./index.js" type="module"></script>
 </html>
